@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Impression Design — Инвест-дизайн и хоум-стейджинг</title>
+
+    <!-- Google Fonts: Inter + Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui'],
+                        serif: ['Playfair Display', 'serif']
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f8ff', 100: '#dbefff', 200: '#b5dbff', 300: '#86c3ff', 400: '#4da6ff', 500: '#1e8bff', 600: '#006be6', 700: '#0054b4', 800: '#003f85', 900: '#002f66'
+                        }
+                    },
+                    boxShadow: {
+                        soft: '0 8px 24px rgba(0,0,0,0.08)'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-slate-800 bg-white">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <a href="#" class="flex items-center gap-2 font-extrabold text-xl tracking-tight">
+                <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-primary-600 text-white">ID</span>
+                <span>Impression Design</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold">
+                <a href="#services" class="hover:text-primary-700">Услуги</a>
+                <a href="#cases" class="hover:text-primary-700">Кейсы</a>
+                <a href="#process" class="hover:text-primary-700">Этапы</a>
+                <a href="#benefits" class="hover:text-primary-700">Преимущества</a>
+                <a href="#reviews" class="hover:text-primary-700">Отзывы</a>
+                <a href="#contact" class="px-4 py-2 rounded-xl bg-primary-600 text-white hover:bg-primary-700 shadow-soft">Оставить заявку</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="relative isolate overflow-hidden bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+            <h1 class="font-serif text-4xl sm:text-5xl font-extrabold leading-tight">Инвест-дизайн, который увеличивает доходность</h1>
+            <p class="mt-6 text-lg text-slate-600">Мы подготавливаем недвижимость к продаже и аренде так, чтобы она выделялась на рынке и приносила вам больше прибыли. Ускоряем сделки и повышаем ликвидность ваших объектов.</p>
+            <div class="mt-8 flex flex-wrap gap-4">
+                <a href="#contact" class="px-6 py-3 rounded-xl bg-primary-600 text-white hover:bg-primary-700 shadow-soft">Рассчитать стоимость</a>
+                <a href="#cases" class="px-6 py-3 rounded-xl border border-slate-300 hover:border-primary-600 hover:text-primary-700">Посмотреть кейсы</a>
+            </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-soft">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" alt="Современный интерьер" class="w-full h-full object-cover">
+        </div>
+    </div>
+</section>
+
+<!-- Value -->
+<section class="py-20" id="value">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-extrabold">Почему инвест-дизайн работает</h2>
+        <p class="mt-4 text-slate-600 max-w-3xl mx-auto">Обычная пустая квартира или жильё с устаревшей отделкой проигрывает конкурентам. Мы создаём «эффект готового дома», чтобы ваш объект воспринимался дороже и уходил с рынка быстрее.</p>
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold">+30–50% к стоимости</h3>
+                <p class="mt-2 text-sm text-slate-600">После стейджинга объект продаётся или сдаётся дороже.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold">В 2 раза быстрее</h3>
+                <p class="mt-2 text-sm text-slate-600">Сроки сделок сокращаются вдвое благодаря грамотной подаче.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold">Минимальные вложения</h3>
+                <p class="mt-2 text-sm text-slate-600">Не нужен капитальный ремонт — достаточно акцентов и правильной мебели.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold">Привлечение внимания</h3>
+                <p class="mt-2 text-sm text-slate-600">Ваш объект заметят на фоне десятков однотипных объявлений.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cases -->
+<section id="cases" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-extrabold">Кейсы «до/после»</h2>
+        <p class="mt-4 text-slate-600">Реальные проекты, где мы увеличили скорость продажи и доходность объектов.</p>
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article class="bg-white rounded-2xl shadow-soft border border-slate-200 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118b?q=80&w=1200&auto=format&fit=crop" alt="До" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="font-bold">Студия 32 м², Москва</h3>
+                    <p class="mt-2 text-sm text-slate-600">До: пустая отделка WhiteBox. После: зонирование, мебель, декор. Продано на 1,4 млн ₽ дороже за 3 недели.</p>
+                </div>
+            </article>
+            <article class="bg-white rounded-2xl shadow-soft border border-slate-200 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1600585154208-17fe4b02d8db?q=80&w=1200&auto=format&fit=crop" alt="После" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="font-bold">Апартаменты 54 м², Санкт-Петербург</h3>
+                    <p class="mt-2 text-sm text-slate-600">После обновления отделки и стейджинга срок сдачи сократился с 3 месяцев до 4 недель, аренда +35%.</p>
+                </div>
+            </article>
+            <article class="bg-white rounded-2xl shadow-soft border border-slate-200 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1600585154526-990dcedb5dfc?q=80&w=1200&auto=format&fit=crop" alt="Кейс" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="font-bold">Квартира 75 м², Казань</h3>
+                    <p class="mt-2 text-sm text-slate-600">Косметический ремонт + комплектация. Объект ушёл за месяц вместо шести, прирост стоимости 20%.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Process -->
+<section id="process" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-extrabold">Как мы работаем</h2>
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
+            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold">1. Диагностика</h3>
+                <p class="mt-2 text-sm text-slate-600">Оценка объекта, целей и аудитории.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold">2. Концепция</h3>
+                <p class="mt-2 text-sm text-slate-600">Выбираем стиль, готовим смету и план действий.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold">3. Подготовка</h3>
+                <p class="mt-2 text-sm text-slate-600">Деперсонализация, устранение дефектов, клининг.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold">4. Реализация</h3>
+                <p class="mt-2 text-sm text-slate-600">Закупка мебели, декорирование, финальный вид.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold">5. Результат</h3>
+                <p class="mt-2 text-sm text-slate-600">Фотосессия, размещение и быстрый выход на сделку.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits -->
+<section id="benefits" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-extrabold">Почему выбирают нас</h2>
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold">Опыт</h3>
+                <p class="mt-2 text-sm text-slate-600">13 лет в коммерческих интерьерах, 150+ успешных объектов.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold">ROI</h3>
+                <p class="mt-2 text-sm text-slate-600">Фокус на возврате инвестиций и ликвидности объекта.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold">Прозрачность</h3>
+                <p class="mt-2 text-sm text-slate-600">Фиксированные сроки, честные сметы, отчётность.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold">Выгода</h3>
+                <p class="mt-2 text-sm text-slate-600">Экономия времени и бюджета за счёт профессиональных решений.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-extrabold">Отзывы клиентов</h2>
+        <div class="mt-10 grid md:grid-cols-3 gap-6">
+            <figure class="p-6 bg-white rounded-2xl border border-slate-200 shadow-soft">
+                <blockquote class="text-slate-700">«Квартира продавалась 4 месяца. После стейджинга продали за 3 недели и на 1,2 млн ₽ дороже.»</blockquote>
+                <figcaption class="mt-4 text-sm text-slate-500">Анна, инвестор</figcaption>
+            </figure>
+            <figure class="p-6 bg-white rounded-2xl border border-slate-200 shadow-soft">
+                <blockquote class="text-slate-700">«Доход от аренды вырос на 35%. Все сделано под ключ, без моего участия.»</blockquote>
+                <figcaption class="mt-4 text-sm text-slate-500">Игорь, собственник</figcaption>
+            </figure>
+            <figure class="p-6 bg-white rounded-2xl border border-slate-200 shadow-soft">
+                <blockquote class="text-slate-700">«Понравилась прозрачность и сроки. Вложения окупились меньше чем за два месяца.»</blockquote>
+                <figcaption class="mt-4 text-sm text-slate-500">Мария, инвестор</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 bg-slate-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-extrabold">Оставьте заявку</h2>
+        <p class="mt-4 text-slate-600">Заполните форму — мы подготовим персональное предложение по вашему объекту.</p>
+        <form class="mt-10 grid gap-4 text-left max-w-xl mx-auto">
+            <div>
+                <label class="block text-sm font-semibold" for="name">Имя</label>
+                <input id="name" type="text" class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-600">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold" for="phone">Телефон</label>
+                <input id="phone" type="text" class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-600">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold" for="email">Email</label>
+                <input id="email" type="email" class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-600">
+            </div>
+            <button type="button" class="mt-4 px-6 py-3 rounded-xl bg-primary-600 text-white hover:bg-primary-700 shadow-soft">Отправить заявку</button>
+            <p class="text-xs text-slate-500">Нажимая
