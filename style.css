@@ -67,3 +67,7 @@ body {
 .button-text-heading{
   color: white;
 }
+
+header {
+  background-color: var(--color-3rd);
+}
