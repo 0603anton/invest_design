@@ -67,3 +67,10 @@ body {
 .button-text-heading{
   color: white;
 }
+
+.header-line{
+  /*color: white;*/
+  /*color: var(--color-3rd);*/
+  color: var(--color-primary);
+  /*background-color: var(--color-3rd);*/
+}
