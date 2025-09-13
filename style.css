@@ -8,6 +8,7 @@
 
 body {
   color: var(--color-default);
+  font-family: 'Roboto', sans-serif;
 }
 
 .text-slate-800,
