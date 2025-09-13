@@ -38,8 +38,8 @@
 </head>
 <body class="font-sans antialiased text-slate-800 bg-white">
 <!-- Header -->
-<header class="sticky top-0 z-50 backdrop-blur border-primary">
-    <div class="max-w-7xl header-line mx-auto px-4 sm:px-6 lg:px-8">
+<header class="sticky top-0 z-50 border-b border-primary-600 bg-[#9a8162]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
             <a href="#" class="flex items-center gap-2 font-extrabold text-xl tracking-tight">
                 <img src="assets/logo/logo_1.png" alt="Impression Design logo" class="h-8 w-auto" />
@@ -364,6 +364,17 @@
         </div>
     </div>
 </footer>
+
+<script>
+  const header = document.querySelector('header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+      header.classList.add('backdrop-blur');
+    } else {
+      header.classList.remove('backdrop-blur');
+    }
+  });
+</script>
 
 </body>
 </html>
