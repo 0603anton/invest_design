@@ -15,7 +15,7 @@ body {
 .text-slate-700,
 .text-slate-600,
 .text-slate-500 {
-  color: var(--color-default) !important;
+  color: var(--color-default);
 }
 
 .bg-slate-50 {
@@ -28,11 +28,11 @@ body {
 }
 
 .bg-primary-600 {
-  background-color: var(--color-primary) !important;
+  background-color: var(--color-3rd) !important;
 }
 
 .hover\:bg-primary-700:hover {
-  background-color: var(--color-3rd) !important;
+  background-color: var(--color-primary) !important;
 }
 
 .text-primary-700,
@@ -54,4 +54,16 @@ body {
   min-height: calc(100vh - 4rem);
   display: flex;
   align-items: center;
+}
+
+.hero-heading{
+  color: white;
+}
+
+.hero-text{
+  color: white !important;
+}
+
+.button-text-heading{
+  color: white;
 }
