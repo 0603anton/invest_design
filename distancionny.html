@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Проект дистанционный — Impression Design</title>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Roboto', 'system-ui', 'Arial', 'sans-serif'],
+                        serif: ['Roboto', 'system-ui', 'Arial', 'sans-serif']
+                    },
+                    colors: {
+                        default: '#222222',
+                        primary: '#b3a79f',
+                        third: '#9a8162',
+                        secondary: '#222222',
+                        red: '#6b3e4a'
+                    },
+                    boxShadow: {
+                        soft: '0 8px 24px rgba(0,0,0,0.08)'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body class="font-sans antialiased text-slate-800 bg-white">
+<header class="sticky top-0 z-50 header-line border-primary-600 bg-[#9a8162]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <a class="flex items-center gap-2 font-extrabold text-xl tracking-tight" href="index.html">
+                <img alt="Impression Design logo" class="h-8 w-auto" src="assets/logo/logo_1.png"/>
+                <span>Impression Design</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-md font-semibold">
+                <a class="hover:text-primary-700" href="index.html#services">Услуги и стоимость</a>
+                <a class="hover:text-primary-700" href="index.html#cases">Кейсы</a>
+                <a class="hover:text-primary-700" href="index.html#benefits">Преимущества</a>
+                <a class="hover:text-primary-700" href="index.html#team">Команда</a>
+                <a class="hover:text-primary-700" href="index.html#reviews">Отзывы</a>
+                <a class="px-4 header-action-button py-2 rounded-xl backdrop-blur text-white  shadow-soft border border-slate-300 hover:border-primary-600" href="index.html#contact">Оставить заявку</a>
+            </nav>
+            <button aria-label="Открыть меню" class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-lg border border-slate-200" onclick="document.getElementById('mnav').classList.toggle('hidden')">☰
+            </button>
+        </div>
+    </div>
+    <div class="md:hidden hidden border-t border-slate-200 bg-white" id="mnav">
+        <div class="max-w-7xl mx-auto px-4 py-3 grid gap-2 text-sm font-semibold">
+            <a class="py-2" href="index.html#services">Услуги и стоимость</a>
+            <a class="py-2" href="index.html#cases">Кейсы</a>
+            <a class="py-2" href="index.html#benefits">Преимущества</a>
+            <a class="py-2" href="index.html#team">Команда</a>
+            <a class="py-2" href="index.html#reviews">Отзывы</a>
+            <a class="py-2" href="index.html#contact">Оставить заявку</a>
+        </div>
+    </div>
+</header>
+
+<section class="py-20">
+    <div class="max-w-3xl mx-auto px-4">
+        <h1 class="text-3xl font-extrabold">Проект дистанционный</h1>
+        <p class="mt-4 text-slate-600">Чертежи и визуализации без сопровождения работ.</p>
+        <div class="relative mt-10" id="slider-container">
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80" alt="До" class="w-full">
+            <div class="absolute top-0 left-0 h-full overflow-hidden" id="after-image" style="width:50%">
+                <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80" alt="После" class="w-full">
+            </div>
+            <input type="range" min="0" max="100" value="50" id="slider-range" class="absolute bottom-4 left-1/2 -translate-x-1/2 w-11/12">
+        </div>
+    </div>
+</section>
+
+<footer class="border-t border-slate-200 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8 text-sm">
+        <div>
+            <div class="flex items-center gap-2 font-extrabold text-lg">
+                <img alt="Impression Design logo" class="h-8 w-auto" src="assets/logo/logo_1.png"/>
+                <span>Impression Design</span>
+            </div>
+            <p class="mt-4 text-slate-600">Инвест‑дизайн и хоум‑стейджинг для тех, кто считает деньги и время. Работаем по договору, соблюдаем сроки и сметы.</p>
+        </div>
+        <div>
+            <h3 class="font-semibold">Навигация</h3>
+            <ul class="mt-3 space-y-2">
+                <li><a class="hover:text-primary-700" href="index.html#services">Услуги и стоимость</a></li>
+                <li><a class="hover:text-primary-700" href="index.html#cases">Кейсы</a></li>
+                <li><a class="hover:text-primary-700" href="index.html#team">Команда</a></li>
+                <li><a class="hover:text-primary-700" href="index.html#contact">Контакты</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-semibold">Юридическая информация</h3>
+            <ul class="mt-3 space-y-2">
+                <li><a class="hover:text-primary-700" href="#">Политика конфиденциальности</a></li>
+                <li><a class="hover:text-primary-700" href="#">Пользовательское соглашение</a></li>
+                <li class="text-slate-500">© 2025 Impression Design</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            header.classList.add('backdrop-blur');
+            header.classList.remove('bg-[#9a8162]');
+        } else {
+            header.classList.remove('backdrop-blur');
+            header.classList.add('bg-[#9a8162]');
+        }
+    });
+    const headerbtn = document.querySelector('.header-action-button');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            headerbtn.classList.remove('backdrop-blur');
+            headerbtn.classList.add('bg-[#b3a79f]');
+        } else {
+            headerbtn.classList.add('backdrop-blur');
+            headerbtn.classList.remove('bg-[#b3a79f]');
+        }
+    });
+    const range = document.getElementById('slider-range');
+    const after = document.getElementById('after-image');
+    const update = () => after.style.width = range.value + '%';
+    range.addEventListener('input', update);
+    update();
+</script>
+
+</body>
+</html>
+
