@@ -51,7 +51,7 @@
                 <a class="hover:text-primary-700" href="#benefits">Преимущества</a>
                 <a class="hover:text-primary-700" href="#team">Команда</a>
                 <a class="hover:text-primary-700" href="#reviews">Отзывы</a>
-                <a class="px-4 py-2 rounded-xl bg-primary-600 text-white hover:bg-primary-700 shadow-soft"
+                <a class="px-4 header-action-button py-2 rounded-xl backdrop-blur text-white  shadow-soft border border-slate-300 hover:border-primary-600"
                    href="#contact">Оставить
                     заявку</a>
             </nav>
@@ -210,6 +210,7 @@
             <article class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
                 <h3 class="font-bold text-xl">Упаковка интерьера</h3>
                 <p class="mt-2 text-sm text-slate-600">Декор и меблировка без строительных работ.</p>
+                <br>
                 <ul class="mt-4 text-sm text-slate-600 space-y-1 list-disc list-inside">
                     <li>Готовое помещение</li>
                     <li>Цвет и палитра</li>
@@ -287,22 +288,22 @@
             максимум от своих инвестиций в недвижимость.</p>
         <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="text-center">
-                <img alt="Ангелина" class="mx-auto rounded-full w-40 h-40 object-cover" src="assets/team/team-111.jpg">
+                <img alt="Ангелина" class="mx-auto rounded-full w-40 h-40 object-cover" src="assets/team/team-222.jpg">
                 <h3 class="mt-4 font-semibold">Ангелина</h3>
-                <p class="text-sm text-slate-600">Основатель и арт‑директор</p>
+                <p class="text-sm text-slate-600">Дизайнер интерьера</p>
             </div>
             <div class="text-center">
-                <img alt="Антон" class="mx-auto rounded-full w-40 h-40 object-cover" src="assets/team/team-222.jpg">
+                <img alt="Антон" class="mx-auto rounded-full w-40 h-40 object-cover" src="assets/team/team-444.jpg">
                 <h3 class="mt-4 font-semibold">Антон</h3>
                 <p class="text-sm text-slate-600">Проектный менеджер</p>
             </div>
             <div class="text-center">
-                <img alt="Светлана" class="mx-auto rounded-full w-40 h-40 object-cover" src="assets/team/team-333.jpg">
+                <img alt="Светлана" class="mx-auto rounded-full w-40 h-40 object-cover" src="assets/team/team-111.jpg">
                 <h3 class="mt-4 font-semibold">Светлана</h3>
                 <p class="text-sm text-slate-600">Дизайнер интерьера</p>
             </div>
             <div class="text-center">
-                <img alt="Наталья" class="mx-auto rounded-full w-40 h-40 object-cover" src="assets/team/team-444.jpg">
+                <img alt="Наталья" class="mx-auto rounded-full w-40 h-40 object-cover" src="assets/team/team-333.jpg">
                 <h3 class="mt-4 font-semibold">Наталья</h3>
                 <p class="text-sm text-slate-600">Специалист по работе с клиентами</p>
             </div>
@@ -380,6 +381,11 @@
                     <option>Апартаменты</option>
                     <option>Апарт‑отель</option>
                 </select>
+            </div>
+            <div>
+                <label class="block text-sm font-semibold" for="ploshad">Площадь</label>
+                <input class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-600" id="ploshad" placeholder="50"
+                       type="text"/>
             </div>
             <div>
                 <label class="block text-sm font-semibold" for="message">Коротко о проекте</label>
@@ -465,6 +471,16 @@
         } else {
             header.classList.remove('backdrop-blur');
             header.classList.add('bg-[#9a8162]');
+        }
+    });
+    const headerbtn = document.querySelector('.header-action-button');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            headerbtn.classList.remove('backdrop-blur');
+            headerbtn.classList.add('bg-[#b3a79f]');
+        } else {
+            headerbtn.classList.add('backdrop-blur');
+            headerbtn.classList.remove('bg-[#b3a79f]');
         }
     });
 </script>

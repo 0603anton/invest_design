@@ -76,3 +76,10 @@ body {
   color: var(--color-secondary);
   /*background-color: var(--color-3rd);*/
 }
+
+.blur-bg {
+  background: rgba(255, 255, 255, 0.3); /* полупрозрачный фон */
+  backdrop-filter: blur(10px);          /* эффект размытия */
+  -webkit-backdrop-filter: blur(10px);  /* для Safari */
+  border-radius: 12px;                  /* чтобы выглядело аккуратно */
+}
