@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>Impression Design — Инвест-дизайн и хоум-стейджинг</title>
 
     <!-- Google Fonts: Roboto (бесплатный, Google Fonts) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- TailwindCSS CDN для быстрого прототипа -->
@@ -34,38 +34,42 @@
             }
         }
     </script>
-    <link rel="stylesheet" href="style.css" />
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body class="font-sans antialiased text-slate-800 bg-white">
 <!-- Header -->
-<header class="sticky top-0 z-50 backdrop-blur border-primary">
-    <div class="max-w-7xl header-line mx-auto px-4 sm:px-6 lg:px-8">
+<header class="sticky top-0 z-50 header-line border-primary-600 bg-[#9a8162]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
-            <a href="#" class="flex items-center gap-2 font-extrabold text-xl tracking-tight">
-                <img src="assets/logo/logo_1.png" alt="Impression Design logo" class="h-8 w-auto" />
+            <a class="flex items-center gap-2 font-extrabold text-xl tracking-tight" href="#">
+                <img alt="Impression Design logo" class="h-8 w-auto" src="assets/logo/logo_1.png"/>
                 <span>Impression Design</span>
             </a>
-            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold">
-                <a href="#services" class="hover:text-primary-700">Услуги</a>
-                <a href="#cases" class="hover:text-primary-700">Кейсы</a>
-                <a href="#process" class="hover:text-primary-700">Этапы</a>
-                <a href="#benefits" class="hover:text-primary-700">Преимущества</a>
-                <a href="#team" class="hover:text-primary-700">Команда</a>
-                <a href="#reviews" class="hover:text-primary-700">Отзывы</a>
-                <a href="#contact" class="px-4 py-2 rounded-xl bg-primary-600 text-white hover:bg-primary-700 shadow-soft">Оставить заявку</a>
+            <nav class="hidden md:flex items-center gap-8 text-md font-semibold">
+                <a class="hover:text-primary-700" href="#services">Услуги</a>
+                <a class="hover:text-primary-700" href="#cases">Кейсы</a>
+                <a class="hover:text-primary-700" href="#process">Этапы</a>
+                <a class="hover:text-primary-700" href="#benefits">Преимущества</a>
+                <a class="hover:text-primary-700" href="#team">Команда</a>
+                <a class="hover:text-primary-700" href="#reviews">Отзывы</a>
+                <a class="px-4 py-2 rounded-xl bg-primary-600 text-white hover:bg-primary-700 shadow-soft"
+                   href="#contact">Оставить
+                    заявку</a>
             </nav>
-            <button class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-lg border border-slate-200" aria-label="Открыть меню" onclick="document.getElementById('mnav').classList.toggle('hidden')">☰</button>
+            <button aria-label="Открыть меню"
+                    class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-lg border border-slate-200" onclick="document.getElementById('mnav').classList.toggle('hidden')">☰
+            </button>
         </div>
     </div>
-    <div id="mnav" class="md:hidden hidden border-t border-slate-200 bg-white">
+    <div class="md:hidden hidden border-t border-slate-200 bg-white" id="mnav">
         <div class="max-w-7xl mx-auto px-4 py-3 grid gap-2 text-sm font-semibold">
-            <a href="#services" class="py-2">Услуги</a>
-            <a href="#cases" class="py-2">Кейсы</a>
-            <a href="#process" class="py-2">Этапы</a>
-            <a href="#benefits" class="py-2">Преимущества</a>
-            <a href="#team" class="py-2">Команда</a>
-            <a href="#reviews" class="py-2">Отзывы</a>
-            <a href="#contact" class="py-2">Оставить заявку</a>
+            <a class="py-2" href="#services">Услуги</a>
+            <a class="py-2" href="#cases">Кейсы</a>
+            <a class="py-2" href="#process">Этапы</a>
+            <a class="py-2" href="#benefits">Преимущества</a>
+            <a class="py-2" href="#team">Команда</a>
+            <a class="py-2" href="#reviews">Отзывы</a>
+            <a class="py-2" href="#contact">Оставить заявку</a>
         </div>
     </div>
 </header>
@@ -75,11 +79,17 @@
     <div class="absolute inset-0 bg-black/30"></div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 hero-content">
         <div class="max-w-xl">
-            <h1 class="hero-heading font-serif text-4xl sm:text-5xl font-extrabold leading-tight">Инвест‑дизайн, который увеличивает доходность</h1>
-            <p class="hero-text mt-6 text-lg text-slate-600">Мы подготавливаем недвижимость к продаже и аренде так, чтобы она выделялась на рынке и приносила больше прибыли. Фокусируемся на сроках сделки и росте стоимости.</p>
+            <h1 class="hero-heading font-serif text-4xl sm:text-5xl font-extrabold leading-tight">Инвест‑дизайн, который
+                увеличивает доходность</h1>
+            <p class="hero-text mt-6 text-lg text-slate-600">Мы подготавливаем недвижимость к продаже и аренде так,
+                чтобы она выделялась на рынке и приносила больше прибыли. Фокусируемся на сроках сделки и росте
+                стоимости.</p>
             <div class="mt-8 flex flex-wrap gap-4">
-                <a href="#contact" class="px-6 py-3 rounded-xl bg-primary-600 text-white hover:bg-primary-700 shadow-soft">Рассчитать стоимость</a>
-                <a href="#cases" class="button-text-heading px-6 py-3 rounded-xl border border-slate-300 hover:border-primary-600 hover:text-primary-700 backdrop-blur">Портфолио</a>
+                <a class="px-6 py-3 rounded-xl bg-primary-600 text-white hover:bg-primary-700 shadow-soft"
+                   href="#contact">Рассчитать
+                    стоимость</a>
+                <a class="button-text-heading px-6 py-3 rounded-xl border border-slate-300 hover:border-primary-600 hover:text-primary-700 backdrop-blur"
+                   href="#cases">Портфолио</a>
             </div>
         </div>
     </div>
@@ -89,7 +99,8 @@
 <section class="py-20" id="value">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-extrabold">Почему инвест‑дизайн работает</h2>
-        <p class="mt-4 text-slate-600 max-w-3xl mx-auto">Пустая или обезличенная квартира проигрывает конкурентам. Мы создаём «эффект готового дома», чтобы объект воспринимался дороже и уходил с рынка быстрее.</p>
+        <p class="mt-4 text-slate-600 max-w-3xl mx-auto">Пустая или обезличенная квартира проигрывает конкурентам. Мы
+            создаём «эффект готового дома», чтобы объект воспринимался дороже и уходил с рынка быстрее.</p>
         <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
                 <h3 class="font-bold">+30–50% к цене</h3>
@@ -112,7 +123,7 @@
 </section>
 
 <!-- Cases with BEFORE/AFTER -->
-<section id="cases" class="py-20 bg-slate-50">
+<section class="py-20 bg-slate-50" id="cases">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-extrabold">Кейсы «до/после»</h2>
         <p class="mt-4 text-slate-600">Реальные проекты, где мы ускорили сделки и повысили доходность.</p>
@@ -121,51 +132,72 @@
             <article class="bg-white rounded-2xl shadow-soft border border-slate-200 overflow-hidden">
                 <div class="grid grid-cols-2 gap-0">
                     <figure class="relative h-48">
-                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118b?q=80&w=1200&auto=format&fit=crop" alt="Студия до — пустая отделка" class="w-full h-full object-cover">
-                        <figcaption class="absolute top-2 left-2 text-xs font-semibold bg-white/80 px-2 py-1 rounded">До</figcaption>
+                        <img alt="Студия до — пустая отделка"
+                             class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118b?q=80&w=1200&auto=format&fit=crop">
+                        <figcaption class="absolute top-2 left-2 text-xs font-semibold bg-white/80 px-2 py-1 rounded">
+                            До
+                        </figcaption>
                     </figure>
                     <figure class="relative h-48">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Студия после — зонирование и мебель" class="w-full h-full object-cover">
-                        <figcaption class="absolute top-2 left-2 text-xs font-semibold bg-white/80 px-2 py-1 rounded">После</figcaption>
+                        <img alt="Студия после — зонирование и мебель"
+                             class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
+                        <figcaption class="absolute top-2 left-2 text-xs font-semibold bg-white/80 px-2 py-1 rounded">
+                            После
+                        </figcaption>
                     </figure>
                 </div>
                 <div class="p-5">
                     <h3 class="font-bold">Студия 32 м², Москва</h3>
-                    <p class="mt-2 text-sm text-slate-600">WhiteBox превратили в готовое пространство: кухонный уголок, спальную зону, акценты светом. Продано на 1,4 млн ₽ дороже за 3 недели.</p>
+                    <p class="mt-2 text-sm text-slate-600">WhiteBox превратили в готовое пространство: кухонный уголок,
+                        спальную зону, акценты светом. Продано на 1,4 млн ₽ дороже за 3 недели.</p>
                 </div>
             </article>
             <!-- Case 2 -->
             <article class="bg-white rounded-2xl shadow-soft border border-slate-200 overflow-hidden">
                 <div class="grid grid-cols-2 gap-0">
                     <figure class="relative h-48">
-                        <img src="https://images.unsplash.com/photo-1600585154208-17fe4b02d8db?q=80&w=1200&auto=format&fit=crop" alt="Апартаменты до — холодная палитра" class="w-full h-full object-cover">
-                        <figcaption class="absolute top-2 left-2 text-xs font-semibold bg-white/80 px-2 py-1 rounded">До</figcaption>
+                        <img alt="Апартаменты до — холодная палитра"
+                             class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600585154208-17fe4b02d8db?q=80&w=1200&auto=format&fit=crop">
+                        <figcaption class="absolute top-2 left-2 text-xs font-semibold bg-white/80 px-2 py-1 rounded">
+                            До
+                        </figcaption>
                     </figure>
                     <figure class="relative h-48">
-                        <img src="https://images.unsplash.com/photo-1600585154154-04e8f3e447cd?q=80&w=1200&auto=format&fit=crop" alt="Апартаменты после — тёплый текстиль, декор" class="w-full h-full object-cover">
-                        <figcaption class="absolute top-2 left-2 text-xs font-semibold bg-white/80 px-2 py-1 rounded">После</figcaption>
+                        <img alt="Апартаменты после — тёплый текстиль, декор"
+                             class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600585154154-04e8f3e447cd?q=80&w=1200&auto=format&fit=crop">
+                        <figcaption class="absolute top-2 left-2 text-xs font-semibold bg-white/80 px-2 py-1 rounded">
+                            После
+                        </figcaption>
                     </figure>
                 </div>
                 <div class="p-5">
                     <h3 class="font-bold">Апартаменты 54 м², Санкт‑Петербург</h3>
-                    <p class="mt-2 text-sm text-slate-600">Обновили отделку, добавили текстиль и декор. Срок сдачи сократился с 3 месяцев до 4 недель, арендная ставка +35%.</p>
+                    <p class="mt-2 text-sm text-slate-600">Обновили отделку, добавили текстиль и декор. Срок сдачи
+                        сократился с 3 месяцев до 4 недель, арендная ставка +35%.</p>
                 </div>
             </article>
             <!-- Case 3 -->
             <article class="bg-white rounded-2xl shadow-soft border border-slate-200 overflow-hidden">
                 <div class="grid grid-cols-2 gap-0">
                     <figure class="relative h-48">
-                        <img src="https://images.unsplash.com/photo-1600585154603-9fd9c86d2c88?q=80&w=1200&auto=format&fit=crop" alt="Квартира до — нейтральная отделка" class="w-full h-full object-cover">
-                        <figcaption class="absolute top-2 left-2 text-xs font-semibold bg-white/80 px-2 py-1 rounded">До</figcaption>
+                        <img alt="Квартира до — нейтральная отделка"
+                             class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600585154603-9fd9c86d2c88?q=80&w=1200&auto=format&fit=crop">
+                        <figcaption class="absolute top-2 left-2 text-xs font-semibold bg-white/80 px-2 py-1 rounded">
+                            До
+                        </figcaption>
                     </figure>
                     <figure class="relative h-48">
-                        <img src="https://images.unsplash.com/photo-1600585154585-4576df6f9b1a?q=80&w=1200&auto=format&fit=crop" alt="Квартира после — аранжировка и свет" class="w-full h-full object-cover">
-                        <figcaption class="absolute top-2 left-2 text-xs font-semibold bg-white/80 px-2 py-1 rounded">После</figcaption>
+                        <img alt="Квартира после — аранжировка и свет"
+                             class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600585154585-4576df6f9b1a?q=80&w=1200&auto=format&fit=crop">
+                        <figcaption class="absolute top-2 left-2 text-xs font-semibold bg-white/80 px-2 py-1 rounded">
+                            После
+                        </figcaption>
                     </figure>
                 </div>
                 <div class="p-5">
                     <h3 class="font-bold">Квартира 75 м², Казань</h3>
-                    <p class="mt-2 text-sm text-slate-600">Косметика + комплектация. Объект ушёл за месяц вместо шести, прирост стоимости 20%.</p>
+                    <p class="mt-2 text-sm text-slate-600">Косметика + комплектация. Объект ушёл за месяц вместо шести,
+                        прирост стоимости 20%.</p>
                 </div>
             </article>
         </div>
@@ -173,7 +205,7 @@
 </section>
 
 <!-- Process -->
-<section id="process" class="py-20">
+<section class="py-20" id="process">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-extrabold">Как мы работаем</h2>
         <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
@@ -202,13 +234,14 @@
 </section>
 
 <!-- Benefits -->
-<section id="benefits" class="py-20 bg-slate-50">
+<section class="py-20 bg-slate-50" id="benefits">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-extrabold">Почему выбирают нас</h2>
         <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
                 <h3 class="font-bold">Опыт</h3>
-                <p class="mt-2 text-sm text-slate-600">13 лет в коммерческих интерьерах, 150+ реализованных объектов.</p>
+                <p class="mt-2 text-sm text-slate-600">13 лет в коммерческих интерьерах, 150+ реализованных
+                    объектов.</p>
             </div>
             <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
                 <h3 class="font-bold">ROI‑подход</h3>
@@ -227,28 +260,29 @@
 </section>
 
 <!-- Team -->
-<section id="team" class="py-20 bg-white">
+<section class="py-20 bg-white" id="team">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-extrabold">Команда</h2>
-        <p class="mt-4 text-slate-600 max-w-3xl">Мы собрали команду специалистов, которые помогают клиентам получать максимум от своих инвестиций в недвижимость.</p>
+        <p class="mt-4 text-slate-600 max-w-3xl">Мы собрали команду специалистов, которые помогают клиентам получать
+            максимум от своих инвестиций в недвижимость.</p>
         <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="text-center">
-                <img src="assets/team/team-111.jpg" alt="Ангелина" class="mx-auto rounded-full w-40 h-40 object-cover">
+                <img alt="Ангелина" class="mx-auto rounded-full w-40 h-40 object-cover" src="assets/team/team-111.jpg">
                 <h3 class="mt-4 font-semibold">Ангелина</h3>
                 <p class="text-sm text-slate-600">Основатель и арт‑директор</p>
             </div>
             <div class="text-center">
-                <img src="assets/team/team-222.jpg" alt="Антон" class="mx-auto rounded-full w-40 h-40 object-cover">
+                <img alt="Антон" class="mx-auto rounded-full w-40 h-40 object-cover" src="assets/team/team-222.jpg">
                 <h3 class="mt-4 font-semibold">Антон</h3>
                 <p class="text-sm text-slate-600">Проектный менеджер</p>
             </div>
             <div class="text-center">
-                <img src="assets/team/team-333.jpg" alt="Светлана" class="mx-auto rounded-full w-40 h-40 object-cover">
+                <img alt="Светлана" class="mx-auto rounded-full w-40 h-40 object-cover" src="assets/team/team-333.jpg">
                 <h3 class="mt-4 font-semibold">Светлана</h3>
                 <p class="text-sm text-slate-600">Дизайнер интерьера</p>
             </div>
             <div class="text-center">
-                <img src="assets/team/team-444.jpg" alt="Наталья" class="mx-auto rounded-full w-40 h-40 object-cover">
+                <img alt="Наталья" class="mx-auto rounded-full w-40 h-40 object-cover" src="assets/team/team-444.jpg">
                 <h3 class="mt-4 font-semibold">Наталья</h3>
                 <p class="text-sm text-slate-600">Специалист по работе с клиентами</p>
             </div>
@@ -257,56 +291,70 @@
 </section>
 
 <!-- Reviews -->
-<section id="reviews" class="py-20">
+<section class="py-20" id="reviews">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-extrabold text-center">Отзывы клиентов</h2>
         <div class="mt-10 grid md:grid-cols-3 gap-6">
             <figure class="p-6 bg-white rounded-2xl border border-slate-200 shadow-soft">
                 <div class="flex items-center gap-3">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop" alt="Фото клиента Анна" class="h-10 w-10 rounded-full object-cover">
+                    <img alt="Фото клиента Анна"
+                         class="h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop">
                     <figcaption class="text-sm font-semibold">Анна, инвестор</figcaption>
                 </div>
-                <blockquote class="mt-4 text-slate-700">«Квартира продавалась 4 месяца. После стейджинга продали за 3 недели и на 1,2 млн ₽ дороже. Понравились чёткие сроки и организация».</blockquote>
+                <blockquote class="mt-4 text-slate-700">«Квартира продавалась 4 месяца. После стейджинга продали за 3
+                    недели и на 1,2 млн ₽ дороже. Понравились чёткие сроки и организация».
+                </blockquote>
             </figure>
             <figure class="p-6 bg-white rounded-2xl border border-slate-200 shadow-soft">
                 <div class="flex items-center gap-3">
-                    <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=200&auto=format&fit=crop" alt="Фото клиента Игорь" class="h-10 w-10 rounded-full object-cover">
+                    <img alt="Фото клиента Игорь"
+                         class="h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=200&auto=format&fit=crop">
                     <figcaption class="text-sm font-semibold">Игорь, собственник</figcaption>
                 </div>
-                <blockquote class="mt-4 text-slate-700">«Доход от аренды вырос на 35%. Сделали всё под ключ: от закупки до фотосессии. Я только подписал договор».</blockquote>
+                <blockquote class="mt-4 text-slate-700">«Доход от аренды вырос на 35%. Сделали всё под ключ: от закупки
+                    до фотосессии. Я только подписал договор».
+                </blockquote>
             </figure>
             <figure class="p-6 bg-white rounded-2xl border border-slate-200 shadow-soft">
                 <div class="flex items-center gap-3">
-                    <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=200&auto=format&fit=crop" alt="Фото клиента Мария" class="h-10 w-10 rounded-full object-cover">
+                    <img alt="Фото клиента Мария"
+                         class="h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=200&auto=format&fit=crop">
                     <figcaption class="text-sm font-semibold">Мария, инвестор</figcaption>
                 </div>
-                <blockquote class="mt-4 text-slate-700">«Вложения окупились меньше чем за два месяца. Команда предложила решения, которых не было в брифе, и они сработали».</blockquote>
+                <blockquote class="mt-4 text-slate-700">«Вложения окупились меньше чем за два месяца. Команда предложила
+                    решения, которых не было в брифе, и они сработали».
+                </blockquote>
             </figure>
         </div>
     </div>
 </section>
 
 <!-- Contact -->
-<section id="contact" class="py-20 bg-slate-50">
+<section class="py-20 bg-slate-50" id="contact">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-extrabold">Оставьте заявку</h2>
-        <p class="mt-4 text-slate-600">Заполните форму — подготовим персональное предложение по вашему объекту в течение 1 рабочего дня.</p>
+        <p class="mt-4 text-slate-600">Заполните форму — подготовим персональное предложение по вашему объекту в течение
+            1 рабочего дня.</p>
         <form class="mt-10 grid gap-4 text-left max-w-xl mx-auto">
             <div>
                 <label class="block text-sm font-semibold" for="name">Имя</label>
-                <input id="name" type="text" placeholder="Иван" class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-600" />
+                <input class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-600" id="name" placeholder="Иван"
+                       type="text"/>
             </div>
             <div>
                 <label class="block text-sm font-semibold" for="phone">Телефон</label>
-                <input id="phone" type="tel" placeholder="+49 160 0000000" class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-600" />
+                <input class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-600" id="phone" placeholder="+49 160 0000000"
+                       type="tel"/>
             </div>
             <div>
                 <label class="block text-sm font-semibold" for="email">Email</label>
-                <input id="email" type="email" placeholder="name@example.com" class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-600" />
+                <input class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-600" id="email" placeholder="name@example.com"
+                       type="email"/>
             </div>
             <div>
                 <label class="block text-sm font-semibold" for="type">Тип объекта</label>
-                <select id="type" class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-600">
+                <select class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-600"
+                        id="type">
                     <option>Студия</option>
                     <option>Квартира</option>
                     <option>Апартаменты</option>
@@ -315,10 +363,16 @@
             </div>
             <div>
                 <label class="block text-sm font-semibold" for="message">Коротко о проекте</label>
-                <textarea id="message" rows="4" placeholder="Город, метраж, цель (продажа/аренда), ориентировочный бюджет" class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-600"></textarea>
+                <textarea class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-600" id="message"
+                          placeholder="Город, метраж, цель (продажа/аренда), ориентировочный бюджет"
+                          rows="4"></textarea>
             </div>
-            <button type="submit" class="mt-2 px-6 py-3 rounded-xl bg-primary-600 text-white hover:bg-primary-700 shadow-soft">Отправить заявку</button>
-            <p class="text-xs text-slate-500">Нажимая «Отправить заявку», вы соглашаетесь с обработкой персональных данных.</p>
+            <button class="mt-2 px-6 py-3 rounded-xl bg-primary-600 text-white hover:bg-primary-700 shadow-soft"
+                    type="submit">
+                Отправить заявку
+            </button>
+            <p class="text-xs text-slate-500">Нажимая «Отправить заявку», вы соглашаетесь с обработкой персональных
+                данных.</p>
         </form>
     </div>
 </section>
@@ -328,42 +382,73 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8 text-sm">
         <div>
             <div class="flex items-center gap-2 font-extrabold text-lg">
-                <img src="assets/logo/logo_1.png" alt="Impression Design logo" class="h-8 w-auto" />
+                <img alt="Impression Design logo" class="h-8 w-auto" src="assets/logo/logo_1.png"/>
                 <span>Impression Design</span>
             </div>
-            <p class="mt-4 text-slate-600">Инвест‑дизайн и хоум‑стейджинг для тех, кто считает деньги и время. Работаем по договору, соблюдаем сроки и сметы.</p>
+            <p class="mt-4 text-slate-600">Инвест‑дизайн и хоум‑стейджинг для тех, кто считает деньги и время. Работаем
+                по договору, соблюдаем сроки и сметы.</p>
         </div>
         <div>
             <h3 class="font-semibold">Навигация</h3>
             <ul class="mt-3 space-y-2">
-                <li><a href="#services" class="hover:text-primary-700">Услуги</a></li>
-                <li><a href="#cases" class="hover:text-primary-700">Кейсы</a></li>
-                <li><a href="#process" class="hover:text-primary-700">Этапы</a></li>
-                <li><a href="#team" class="hover:text-primary-700">Команда</a></li>
-                <li><a href="#contact" class="hover:text-primary-700">Контакты</a></li>
+                <li><a class="hover:text-primary-700" href="#services">Услуги</a></li>
+                <li><a class="hover:text-primary-700" href="#cases">Кейсы</a></li>
+                <li><a class="hover:text-primary-700" href="#process">Этапы</a></li>
+                <li><a class="hover:text-primary-700" href="#team">Команда</a></li>
+                <li><a class="hover:text-primary-700" href="#contact">Контакты</a></li>
             </ul>
         </div>
         <div>
             <h3 class="font-semibold">Ассеты (сток и шрифты)</h3>
             <ul class="mt-3 space-y-2 text-slate-600">
                 <li>Шрифты: Roboto — Google Fonts (бесплатная лицензия).</li>
-                <li>Hero: <a class="underline hover:text-primary-700" href="https://unsplash.com/photos/990dcedb5dfc">unsplash.com/photos/990dcedb5dfc</a></li>
-                <li>Кейс 1 (до): <a class="underline hover:text-primary-700" href="https://unsplash.com/photos/ce8a6c25118b">unsplash.com/photos/ce8a6c25118b</a>; (после): <a class="underline hover:text-primary-700" href="https://unsplash.com/photos/be6161a56a0c">unsplash.com/photos/be6161a56a0c</a></li>
-                <li>Кейс 2 (до): <a class="underline hover:text-primary-700" href="https://unsplash.com/photos/17fe4b02d8db">unsplash.com/photos/17fe4b02d8db</a>; (после): <a class="underline hover:text-primary-700" href="https://unsplash.com/photos/04e8f3e447cd">unsplash.com/photos/04e8f3e447cd</a></li>
-                <li>Кейс 3 (до): <a class="underline hover:text-primary-700" href="https://unsplash.com/photos/9fd9c86d2c88">unsplash.com/photos/9fd9c86d2c88</a>; (после): <a class="underline hover:text-primary-700" href="https://unsplash.com/photos/4576df6f9b1a">unsplash.com/photos/4576df6f9b1a</a></li>
-                <li>Аватары отзывов: <a class="underline hover:text-primary-700" href="https://unsplash.com/photos/94ddf0286df2">94ddf0286df2</a>, <a class="underline hover:text-primary-700" href="https://unsplash.com/photos/3fb6469f5b39">3fb6469f5b39</a>, <a class="underline hover:text-primary-700" href="https://unsplash.com/photos/ee32379fefbe">ee32379fefbe</a></li>
+                <li>Hero: <a class="underline hover:text-primary-700" href="https://unsplash.com/photos/990dcedb5dfc">unsplash.com/photos/990dcedb5dfc</a>
+                </li>
+                <li>Кейс 1 (до): <a class="underline hover:text-primary-700"
+                                    href="https://unsplash.com/photos/ce8a6c25118b">unsplash.com/photos/ce8a6c25118b</a>;
+                    (после): <a class="underline hover:text-primary-700"
+                                href="https://unsplash.com/photos/be6161a56a0c">unsplash.com/photos/be6161a56a0c</a>
+                </li>
+                <li>Кейс 2 (до): <a class="underline hover:text-primary-700"
+                                    href="https://unsplash.com/photos/17fe4b02d8db">unsplash.com/photos/17fe4b02d8db</a>;
+                    (после): <a class="underline hover:text-primary-700"
+                                href="https://unsplash.com/photos/04e8f3e447cd">unsplash.com/photos/04e8f3e447cd</a>
+                </li>
+                <li>Кейс 3 (до): <a class="underline hover:text-primary-700"
+                                    href="https://unsplash.com/photos/9fd9c86d2c88">unsplash.com/photos/9fd9c86d2c88</a>;
+                    (после): <a class="underline hover:text-primary-700"
+                                href="https://unsplash.com/photos/4576df6f9b1a">unsplash.com/photos/4576df6f9b1a</a>
+                </li>
+                <li>Аватары отзывов: <a class="underline hover:text-primary-700"
+                                        href="https://unsplash.com/photos/94ddf0286df2">94ddf0286df2</a>, <a
+                        class="underline hover:text-primary-700" href="https://unsplash.com/photos/3fb6469f5b39">3fb6469f5b39</a>,
+                    <a class="underline hover:text-primary-700" href="https://unsplash.com/photos/ee32379fefbe">ee32379fefbe</a>
+                </li>
             </ul>
         </div>
         <div>
             <h3 class="font-semibold">Юридическая информация</h3>
             <ul class="mt-3 space-y-2">
-                <li><a href="#" class="hover:text-primary-700">Политика конфиденциальности</a></li>
-                <li><a href="#" class="hover:text-primary-700">Пользовательское соглашение</a></li>
+                <li><a class="hover:text-primary-700" href="#">Политика конфиденциальности</a></li>
+                <li><a class="hover:text-primary-700" href="#">Пользовательское соглашение</a></li>
                 <li class="text-slate-500">© 2025 Impression Design</li>
             </ul>
         </div>
     </div>
 </footer>
+
+<script>
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            header.classList.add('backdrop-blur');
+            header.classList.remove('bg-[#9a8162]');
+        } else {
+            header.classList.remove('backdrop-blur');
+            header.classList.add('bg-[#9a8162]');
+        }
+    });
+</script>
 
 </body>
 </html>
