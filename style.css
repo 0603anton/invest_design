@@ -1,9 +1,9 @@
 :root {
-  --color-default: #222222;
-  --color-primary: #b3a79f;
-  --color-3rd: #9a8162;
-  --color-secondary: #222222;
-  --color-red: #6b3e4a;
+  --color-default: #463F3A;      /* Charcoal */
+  --color-primary: #CDC2B0;      /* Oatmeal Taupe */
+  --color-3rd: #E3A2A1;          /* Dusty Rose */
+  --color-secondary: #A7B5A1;    /* Soft Sage */
+  --color-red: #C0A472;          /* Muted Brass */
 }
 
 body {
@@ -78,7 +78,7 @@ body {
 }
 
 .blur-bg {
-  background: rgba(255, 255, 255, 0.3); /* полупрозрачный фон */
+  background: rgba(245, 243, 239, 0.3); /* теплый полупрозрачный фон */
   backdrop-filter: blur(10px);          /* эффект размытия */
   -webkit-backdrop-filter: blur(10px);  /* для Safari */
   border-radius: 12px;                  /* чтобы выглядело аккуратно */
