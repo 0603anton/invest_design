@@ -46,9 +46,8 @@
                 <span>Impression Design</span>
             </a>
             <nav class="hidden md:flex items-center gap-8 text-md font-semibold">
-                <a class="hover:text-primary-700" href="#services">Услуги</a>
+                <a class="hover:text-primary-700" href="#services">Услуги и стоимость</a>
                 <a class="hover:text-primary-700" href="#cases">Кейсы</a>
-                <a class="hover:text-primary-700" href="#process">Этапы</a>
                 <a class="hover:text-primary-700" href="#benefits">Преимущества</a>
                 <a class="hover:text-primary-700" href="#team">Команда</a>
                 <a class="hover:text-primary-700" href="#reviews">Отзывы</a>
@@ -63,9 +62,8 @@
     </div>
     <div class="md:hidden hidden border-t border-slate-200 bg-white" id="mnav">
         <div class="max-w-7xl mx-auto px-4 py-3 grid gap-2 text-sm font-semibold">
-            <a class="py-2" href="#services">Услуги</a>
+            <a class="py-2" href="#services">Услуги и стоимость</a>
             <a class="py-2" href="#cases">Кейсы</a>
-            <a class="py-2" href="#process">Этапы</a>
             <a class="py-2" href="#benefits">Преимущества</a>
             <a class="py-2" href="#team">Команда</a>
             <a class="py-2" href="#reviews">Отзывы</a>
@@ -204,31 +202,53 @@
     </div>
 </section>
 
-<!-- Process -->
-<section class="py-20" id="process">
+<!-- Services -->
+<section class="py-20" id="services">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-extrabold">Как мы работаем</h2>
-        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
-            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
-                <h3 class="font-bold">1. Диагностика</h3>
-                <p class="mt-2 text-sm text-slate-600">Анализ объекта, целей и аудитории.</p>
-            </div>
-            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
-                <h3 class="font-bold">2. Концепция</h3>
-                <p class="mt-2 text-sm text-slate-600">Стиль, смета, план работ и KPI по срокам/стоимости.</p>
-            </div>
-            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
-                <h3 class="font-bold">3. Подготовка</h3>
-                <p class="mt-2 text-sm text-slate-600">Деперсонализация, исправление дефектов, клининг.</p>
-            </div>
-            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
-                <h3 class="font-bold">4. Реализация</h3>
-                <p class="mt-2 text-sm text-slate-600">Закупка мебели, декорирование, финальная аранжировка.</p>
-            </div>
-            <div class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
-                <h3 class="font-bold">5. Результат</h3>
-                <p class="mt-2 text-sm text-slate-600">Проф‑фотосессия, публикации, быстрый выход на сделку.</p>
-            </div>
+        <h2 class="text-3xl font-extrabold">Стоимость и услуги</h2>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+            <article class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold text-xl">Упаковка интерьера</h3>
+                <p class="mt-2 text-sm text-slate-600">Декор и меблировка без строительных работ.</p>
+                <ul class="mt-4 text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>Готовое помещение</li>
+                    <li>Цвет и палитра</li>
+                    <li>Мебель</li>
+                    <li>Текстиль и декор</li>
+                    <li>Без ремонта</li>
+                </ul>
+                <p class="mt-4 font-semibold">Стоимость от ...</p>
+                <a href="#contact"
+                   class="mt-6 inline-block px-6 py-3 rounded-xl border border-slate-300 hover:border-primary-600 hover:text-primary-700 text-center">Узнать подробнее</a>
+            </article>
+            <article class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold text-xl">Ремонт с проектом</h3>
+                <p class="mt-2 text-sm text-slate-600">Дизайн-проект и авторский надзор для ремонта с нуля.</p>
+                <ul class="mt-4 text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>White Box / без отделки</li>
+                    <li>Комплект чертежей</li>
+                    <li>Ведомости материалов и мебели</li>
+                    <li>Подбор и сметы</li>
+                    <li>Авторский надзор</li>
+                </ul>
+                <p class="mt-4 font-semibold">Стоимость от ...</p>
+                <a href="#contact"
+                   class="mt-6 inline-block px-6 py-3 rounded-xl border border-slate-300 hover:border-primary-600 hover:text-primary-700 text-center">Узнать подробнее</a>
+            </article>
+            <article class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
+                <h3 class="font-bold text-xl">Проект дистанционный</h3>
+                <p class="mt-2 text-sm text-slate-600">Чертежи и визуализации без сопровождения работ.</p>
+                <ul class="mt-4 text-sm text-slate-600 space-y-1 list-disc list-inside">
+                    <li>Планировки и ТЗ</li>
+                    <li>3D-визуализации</li>
+                    <li>Ведомости и рекомендации</li>
+                    <li>Онлайн-сессии</li>
+                    <li>Без надзора и стройки</li>
+                </ul>
+                <p class="mt-4 font-semibold">Стоимость от ...</p>
+                <a href="#contact"
+                   class="mt-6 inline-block px-6 py-3 rounded-xl border border-slate-300 hover:border-primary-600 hover:text-primary-700 text-center">Узнать подробнее</a>
+            </article>
         </div>
     </div>
 </section>
@@ -391,9 +411,8 @@
         <div>
             <h3 class="font-semibold">Навигация</h3>
             <ul class="mt-3 space-y-2">
-                <li><a class="hover:text-primary-700" href="#services">Услуги</a></li>
+                <li><a class="hover:text-primary-700" href="#services">Услуги и стоимость</a></li>
                 <li><a class="hover:text-primary-700" href="#cases">Кейсы</a></li>
-                <li><a class="hover:text-primary-700" href="#process">Этапы</a></li>
                 <li><a class="hover:text-primary-700" href="#team">Команда</a></li>
                 <li><a class="hover:text-primary-700" href="#contact">Контакты</a></li>
             </ul>
