@@ -70,12 +70,15 @@
     <div class="max-w-3xl mx-auto px-4">
         <h1 class="text-3xl font-extrabold">Ремонт с проектом</h1>
         <p class="mt-4 text-slate-600">Дизайн-проект и авторский надзор для ремонта с нуля.</p>
-        <div class="relative mt-10" id="slider-container">
+        <div class="relative mt-10 overflow-hidden" id="slider-container">
             <img src="https://images.unsplash.com/photo-1523217582562-09d0d75ce8a1?auto=format&fit=crop&w=1200&q=80" alt="До" class="w-full">
             <div class="absolute top-0 left-0 h-full overflow-hidden" id="after-image" style="width:50%">
                 <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1200&q=80" alt="После" class="w-full">
             </div>
-            <input type="range" min="0" max="100" value="50" id="slider-range" class="absolute bottom-4 left-1/2 -translate-x-1/2 w-11/12">
+            <div id="slider-handle" class="absolute top-0 h-full cursor-ew-resize" style="left:50%">
+                <div style="position:absolute;top:0;bottom:0;left:-1px;width:2px;background:white;"></div>
+                <div style="position:absolute;top:50%;left:-12px;width:24px;height:24px;border:2px solid #cbd5e1;background:white;border-radius:50%;transform:translateY(-50%);"></div>
+            </div>
         </div>
     </div>
 </section>
@@ -130,11 +133,26 @@
             headerbtn.classList.remove('bg-[#b3a79f]');
         }
     });
-    const range = document.getElementById('slider-range');
+    const container = document.getElementById('slider-container');
     const after = document.getElementById('after-image');
-    const update = () => after.style.width = range.value + '%';
-    range.addEventListener('input', update);
-    update();
+    const handle = document.getElementById('slider-handle');
+    const updateSlider = (x) => {
+        const rect = container.getBoundingClientRect();
+        let percent = ((x - rect.left) / rect.width) * 100;
+        percent = Math.max(0, Math.min(100, percent));
+        after.style.width = percent + '%';
+        handle.style.left = percent + '%';
+    };
+    container.addEventListener('pointerdown', (e) => {
+        updateSlider(e.clientX);
+        const move = (e) => updateSlider(e.clientX);
+        const up = () => {
+            window.removeEventListener('pointermove', move);
+            window.removeEventListener('pointerup', up);
+        };
+        window.addEventListener('pointermove', move);
+        window.addEventListener('pointerup', up);
+    });
 </script>
 
 </body>
