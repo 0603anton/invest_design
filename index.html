@@ -207,50 +207,118 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-extrabold">Стоимость и услуги</h2>
         <div class="mt-10 grid gap-6 md:grid-cols-3">
-            <article class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
-                <h3 class="font-bold text-xl">Онлайн-консультация</h3>
-                <p class="mt-2 text-sm text-slate-600">Разбираем объект и стратегию: планировка, бюджет, сценарий работы с брокером.</p>
-                <ul class="mt-4 text-sm text-slate-600 space-y-1 list-disc list-inside">
-                    <li><span class="font-semibold text-slate-800">Формат:</span> видеосозвон 90 минут + письменные рекомендации</li>
-                    <li><span class="font-semibold text-slate-800">Результат:</span> чек-лист готовности, подбор решений по меблировке и декору</li>
-                </ul>
-                <p class="mt-4 text-sm text-slate-600"><span class="font-semibold text-slate-800">Срок:</span> в течение 2 рабочих дней после бронирования</p>
-                <p class="mt-2 text-lg font-semibold text-slate-800">Стоимость: 18&nbsp;000&nbsp;₽</p>
-                <div class="mt-6 flex flex-wrap gap-3">
-                    <a href="distancionny.html"
-                       class="inline-flex items-center justify-center px-6 py-3 rounded-xl border border-slate-300 hover:border-primary-600 hover:underline hover:decoration-primary-700 hover:decoration-2 hover:underline-offset-4">Подробнее</a>
+            <article class="service-card">
+                <div class="service-card-header">
+                    <span class="service-badge">Онлайн</span>
+                    <span class="service-duration">90 минут созвон</span>
+                </div>
+                <h3 class="service-card-title">Онлайн-консультация</h3>
+                <p class="service-card-lead">Разбираем объект и стратегию: планировка, бюджет, сценарий работы с брокером.</p>
+                <div class="service-highlights">
+                    <div class="service-feature">
+                        <span class="service-feature-icon" aria-hidden="true">
+                            <svg fill="none" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L9 16.5L19 6.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <p class="service-feature-title">Формат</p>
+                            <p>Видеосозвон 90 минут + письменные рекомендации после встречи.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature">
+                        <span class="service-feature-icon" aria-hidden="true">
+                            <svg fill="none" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L9 16.5L19 6.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <p class="service-feature-title">Результат</p>
+                            <p>Чек-лист готовности, подбор решений по меблировке и декору.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="service-note"><span>Срок:</span> в течение 2 рабочих дней после бронирования.</p>
+                <p class="service-price">Стоимость: от 6&nbsp;500&nbsp;₽</p>
+                <div class="service-cta">
+                    <a class="service-button service-button--ghost" href="distancionny.html">Подробнее</a>
+                    <a class="service-button service-button--primary" href="#contact">Куратор</a>
                 </div>
             </article>
-            <article class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
-                <h3 class="font-bold text-xl">Заезд без ремонта</h3>
-                <p class="mt-2 text-sm text-slate-600">Готовим квартиру к проживанию или аренде без шумных работ: мебель, текстиль, техника.</p>
-                <ul class="mt-4 text-sm text-slate-600 space-y-1 list-disc list-inside">
-                    <li><span class="font-semibold text-slate-800">Что включено:</span> закупка и логистика, сборка мебели, фотостайлинг</li>
-                    <li><span class="font-semibold text-slate-800">Команда:</span> дизайнер + куратор поставок</li>
-                </ul>
-                <p class="mt-4 text-sm text-slate-600"><span class="font-semibold text-slate-800">Срок:</span> 10–14 дней от замера до фотосъёмки</p>
-                <p class="mt-2 text-lg font-semibold text-slate-800">Стоимость: от 180&nbsp;000&nbsp;₽</p>
-                <div class="mt-6 flex flex-wrap gap-3">
-                    <a href="remont.html"
-                       class="inline-flex items-center justify-center px-6 py-3 rounded-xl border border-slate-300 hover:border-primary-600 hover:underline hover:decoration-primary-700 hover:decoration-2 hover:underline-offset-4">Подробнее</a>
-                    <a href="#contact"
-                       class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-primary-600 text-white hover:bg-primary-700">Куратор</a>
+            <article class="service-card">
+                <div class="service-card-header">
+                    <span class="service-badge">Комплектация</span>
+                    <span class="service-duration">10–14 дней</span>
+                </div>
+                <h3 class="service-card-title">Заезд без ремонта</h3>
+                <p class="service-card-lead">Готовим квартиру к проживанию или аренде без шумных работ: мебель, текстиль, техника.</p>
+                <div class="service-highlights">
+                    <div class="service-feature">
+                        <span class="service-feature-icon" aria-hidden="true">
+                            <svg fill="none" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L9 16.5L19 6.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <p class="service-feature-title">Что включено</p>
+                            <p>Закупка и логистика, сборка мебели, фотостайлинг и финальный декор.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature">
+                        <span class="service-feature-icon" aria-hidden="true">
+                            <svg fill="none" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L9 16.5L19 6.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <p class="service-feature-title">Команда</p>
+                            <p>Дизайнер, куратор поставок и проверенные подрядчики под ключ.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="service-note"><span>Срок:</span> 10–14 дней от замера до фотосъёмки.</p>
+                <p class="service-price">Стоимость: от 84&nbsp;000&nbsp;₽</p>
+                <div class="service-cta">
+                    <a class="service-button service-button--ghost" href="remont.html">Подробнее</a>
+                    <a class="service-button service-button--primary" href="#contact">Куратор</a>
                 </div>
             </article>
-            <article class="p-6 bg-white rounded-2xl shadow-soft border border-slate-200">
-                <h3 class="font-bold text-xl">Упаковка интерьера (white box/«серый ключ»/под отделку)</h3>
-                <p class="mt-2 text-sm text-slate-600">Разрабатываем проект комплектации для «голых» стен: инженерия, чистовые материалы, мебель.</p>
-                <ul class="mt-4 text-sm text-slate-600 space-y-1 list-disc list-inside">
-                    <li><span class="font-semibold text-slate-800">Состав:</span> планировочные решения, 3D-визуализация, ведомости и сметы</li>
-                    <li><span class="font-semibold text-slate-800">Поддержка:</span> авторский контроль и подбор подрядчиков</li>
-                </ul>
-                <p class="mt-4 text-sm text-slate-600"><span class="font-semibold text-slate-800">Срок:</span> 4–6 недель с учётом согласований</p>
-                <p class="mt-2 text-lg font-semibold text-slate-800">Стоимость: от 420&nbsp;000&nbsp;₽</p>
-                <div class="mt-6 flex flex-wrap gap-3">
-                    <a href="upakovka.html"
-                       class="inline-flex items-center justify-center px-6 py-3 rounded-xl border border-slate-300 hover:border-primary-600 hover:underline hover:decoration-primary-700 hover:decoration-2 hover:underline-offset-4">Подробнее</a>
-                    <a href="#contact"
-                       class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-primary-600 text-white hover:bg-primary-700">Куратор</a>
+            <article class="service-card">
+                <div class="service-card-header">
+                    <span class="service-badge">White box</span>
+                    <span class="service-duration">4–6 недель</span>
+                </div>
+                <h3 class="service-card-title">Упаковка интерьера (white box/«серый ключ»/под отделку)</h3>
+                <p class="service-card-lead">Разрабатываем проект комплектации для «голых» стен: инженерия, чистовые материалы, мебель.</p>
+                <div class="service-highlights">
+                    <div class="service-feature">
+                        <span class="service-feature-icon" aria-hidden="true">
+                            <svg fill="none" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L9 16.5L19 6.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <p class="service-feature-title">Состав проекта</p>
+                            <p>Планировочные решения, 3D-визуализации, ведомости и сметы по позициям.</p>
+                        </div>
+                    </div>
+                    <div class="service-feature">
+                        <span class="service-feature-icon" aria-hidden="true">
+                            <svg fill="none" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12.5L9 16.5L19 6.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <p class="service-feature-title">Поддержка</p>
+                            <p>Авторский контроль, подбор подрядчиков и сопровождение закупок.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="service-note"><span>Срок:</span> 4–6 недель с учётом согласований.</p>
+                <p class="service-price">Стоимость: от 2&nbsp;500&nbsp;₽ за м²</p>
+                <div class="service-cta">
+                    <a class="service-button service-button--ghost" href="upakovka.html">Подробнее</a>
+                    <a class="service-button service-button--primary" href="#contact">Куратор</a>
                 </div>
             </article>
         </div>

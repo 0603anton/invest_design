@@ -83,3 +83,170 @@ body {
   -webkit-backdrop-filter: blur(10px);  /* для Safari */
   border-radius: 12px;                  /* чтобы выглядело аккуратно */
 }
+
+.service-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 100%;
+  padding: 1.75rem;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.82) 100%);
+  border: 1px solid rgba(154, 129, 98, 0.25);
+  box-shadow: 0 24px 45px -30px rgba(34, 34, 34, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+}
+
+.service-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(34, 34, 34, 0.7);
+}
+
+.service-badge {
+  padding: 0.35rem 0.8rem;
+  border-radius: 9999px;
+  background: rgba(154, 129, 98, 0.12);
+  color: var(--color-3rd);
+  font-weight: 600;
+}
+
+.service-duration {
+  padding: 0.35rem 0.8rem;
+  border-radius: 9999px;
+  background: rgba(179, 167, 159, 0.14);
+  color: rgba(34, 34, 34, 0.75);
+  font-weight: 500;
+}
+
+.service-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.service-card-lead {
+  font-size: 0.95rem;
+  color: rgba(34, 34, 34, 0.78);
+}
+
+.service-highlights {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.service-feature {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  padding: 0.9rem 1.05rem;
+  border-radius: 18px;
+  background: rgba(179, 167, 159, 0.12);
+  border: 1px solid rgba(179, 167, 159, 0.3);
+}
+
+.service-feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(154, 129, 98, 0.12);
+  color: var(--color-3rd);
+}
+
+.service-feature-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.service-feature-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.15rem;
+}
+
+.service-feature p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(34, 34, 34, 0.8);
+}
+
+.service-note {
+  font-size: 0.85rem;
+  color: rgba(34, 34, 34, 0.7);
+}
+
+.service-note span {
+  font-weight: 700;
+  color: rgba(34, 34, 34, 0.95);
+}
+
+.service-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-3rd);
+}
+
+.service-cta {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.service-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.service-button:hover {
+  transform: translateY(-2px);
+}
+
+.service-button--primary {
+  background: var(--color-3rd);
+  color: #fff !important;
+  box-shadow: 0 15px 30px -18px rgba(154, 129, 98, 0.9);
+}
+
+.service-button--primary:hover {
+  background: var(--color-primary);
+  box-shadow: 0 18px 32px -18px rgba(154, 129, 98, 0.85);
+}
+
+.service-button--ghost {
+  border: 1px solid rgba(154, 129, 98, 0.35);
+  color: rgba(34, 34, 34, 0.85);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.service-button--ghost:hover {
+  border-color: rgba(154, 129, 98, 0.65);
+  color: var(--color-3rd);
+}
